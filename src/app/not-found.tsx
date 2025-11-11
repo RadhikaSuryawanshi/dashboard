@@ -1,0 +1,40 @@
+// import Link from 'next/link'
+ 
+// export default function NotFound() {
+//   return (
+//     <div>
+//       <h2>Not Found</h2>
+//       <p>Could not find requested resource</p>
+//       <Link href="/">Return Home</Link>
+//     </div>
+//   )
+// }
+// import Link from 'next/link'
+// import { headers } from 'next/headers'
+ 
+// export default async function NotFound() {
+//   const headersList = await headers()
+//   const domain = headersList.get('host')
+// //   const data = await getSiteData(domain)
+//   return (
+//     <div>
+//       <h2>Not Found: </h2>
+//       <p>Could not find requested resource</p>
+//       <p>
+//         View <Link href="/blog">all posts</Link>
+//       </p>
+//     </div>
+//   )
+// }
+
+export default function GlobalNotFound() {
+  return (
+    <div className="h-screen flex flex-col items-center justify-center text-center">
+      <h1 className="text-4xl font-bold">Oops! Page Not Found 😢</h1>
+      <a href="/" className="mt-4 text-blue-600 underline">Go back home</a>
+    </div>
+  );
+}
+
+
+ 
